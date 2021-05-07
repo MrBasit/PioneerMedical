@@ -150,7 +150,6 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: var(--h-title-lg);
     font-weight: 400;
     text-transform: uppercase;
-    color: red;
     letter-spacing: 0.01em;
 }
 .h_title_bold{
@@ -222,9 +221,13 @@ body::-webkit-scrollbar-thumb:hover {
         width: min(540px, 90%);
     }
     /* header */
+    header .main_nav .header_nav_links{
+        font-size: 0.74rem !important;
+    }
     .logo{    
         font-size: 1.1rem !important;
     }
+
     /* convenient */
     .convenient .main_convenient {
         align-items: center !important;
@@ -284,6 +287,7 @@ header .main_nav .logo{
     font-size: 1.45rem;
     font-weight: 700;
     color: var(--clr-sec);
+    text-align: center;
 }
 header .main_nav .header_nav_links{
     font-size: .8rem;
@@ -447,15 +451,22 @@ header .main_nav .header_nav_links + .header_nav_links{
     color: var(--clr-white);
     background-color: var(--clr-sec);
 }
+.treatment_offers_cards:focus a,
+.treatment_offers_cards:hover a,
 .treatment_offers_cards:focus p,
 .treatment_offers_cards:hover p{
     color: var(--clr-white);
 }
-.treatment_offers_cards h2{
+.treatment_offers_cards a{
     font-size: 1rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     padding: 0 1.8em 1.8em 1.8em;
+    color: var(--clr-prm);
+}
+.treatment_offers_cards a:hover,
+.treatment_offers_cards a:focus{
+   text-decoration: underline;
 }
 .treatment_offers_cards p{
     color: var(--clr-sec);

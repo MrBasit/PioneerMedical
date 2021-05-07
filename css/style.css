@@ -150,6 +150,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: var(--h-title-lg);
     font-weight: 400;
     text-transform: uppercase;
+    color: red;
     letter-spacing: 0.01em;
 }
 .h_title_bold{

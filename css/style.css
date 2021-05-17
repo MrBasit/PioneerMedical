@@ -250,6 +250,10 @@ body::-webkit-scrollbar-thumb:hover {
     {
         width: min(960px, 90%);
     }
+    /* header */
+    header .main_nav .logo .logo_img{
+        width: 20vw !important;
+    }
     .h_how_it_works_main .h_how_it_works_cards .h_how_it_works_cards_body{
         min-height: 16.5rem !important;
     }
@@ -279,8 +283,8 @@ body::-webkit-scrollbar-thumb:hover {
         width: min(720px, 90%);
     }
      /* header */
-     .logo{    
-        font-size: 1rem !important;
+    header .main_nav .logo .logo_img{
+        width: 18vw !important;
     }
       /* treatment offers */
       .treatment_offers_main{
@@ -386,8 +390,8 @@ body::-webkit-scrollbar-thumb:hover {
     header .main_nav .header_nav_links{
         font-size: 0.74rem !important;
     }
-    .logo{    
-        font-size: 1.1rem !important;
+    header .main_nav .logo .logo_img{
+        width: 16vw !important;
     }
 
     /* convenient */
@@ -427,7 +431,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 }
 @media (max-width: 380px){
-  
+  /* header */
+  header .main_nav .logo .logo_img{
+    width: 14.5vw !important;
+}
+
 }
 
 /* ----- Header ------------------------------------------------------- */

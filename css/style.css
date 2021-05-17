@@ -382,6 +382,12 @@ body::-webkit-scrollbar-thumb:hover {
     {
 		font-size: 10.1px !important;
     }
+    .btn{
+        font-size: .8rem !important;
+        width: 8rem !important;
+        padding: .6em 0 !important;
+        
+    }
     .containers
     {
         width: min(540px, 90%);

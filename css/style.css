@@ -446,7 +446,10 @@ footer .h_footer_link + .h_footer_link{
   header .main_nav .logo .logo_img{
     width: 16.5vw !important;
 }
-
+/* footer */
+footer .h_footer_link + .h_footer_link{
+    margin-left: 1rem ;
+}
 }
 
 /* ----- Header ------------------------------------------------------- */

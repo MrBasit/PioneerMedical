@@ -438,9 +438,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 /* footer */
 footer .h_footer_link + .h_footer_link{
-    margin-left: 1rem ;
+    margin-left: auto ;
 }
 }
+
 @media (max-width: 380px){
   /* header */
   header .main_nav .logo .logo_img{
@@ -448,8 +449,9 @@ footer .h_footer_link + .h_footer_link{
 }
 /* footer */
 footer .h_footer_link + .h_footer_link{
-    margin-left: 1rem ;
+    margin-left: auto;
 }
+
 }
 
 /* ----- Header ------------------------------------------------------- */

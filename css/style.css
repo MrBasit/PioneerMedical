@@ -842,7 +842,7 @@ footer .h_footer_link:nth-child(3){
     padding-top: .2em;
 }
 .footer_bottom p{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     font-size: .8rem;
     color: var(--clr-darkgrey3);
     font-weight: 500;

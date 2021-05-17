@@ -576,11 +576,15 @@ header .main_nav .header_nav_links + .header_nav_links{
     transform: translate(-50%, -50%) rotate(90deg);
     -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
-    transition: transform .4s cubic-bezier(0.845, -0.270, 0.025, 1.305);
+    transition: transform .4s cubic-bezier(0.845, -0.270, 0.025, 1.305), background-color .4s ease;
 }
 .convenient_collapse_list_items.active .convenient_collapse_list_item_plus_trigger::after{
     transform: translate(-50%, -50%) rotate(0deg);
-    transition: transform .4s cubic-bezier(0.845, -0.270, 0.025, 1.305);
+    transition: transform .4s cubic-bezier(0.845, -0.270, 0.025, 1.305), background-color .4s ease;
+    background-color: var(--clr-sec);
+}
+.convenient_collapse_list_items.active .convenient_collapse_list_item_plus_trigger{
+    background-color: var(--clr-sec);
 }
 .convenient_collapse_list_item{
     display: flex;

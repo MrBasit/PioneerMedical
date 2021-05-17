@@ -397,7 +397,7 @@ body::-webkit-scrollbar-thumb:hover {
         font-size: 0.74rem !important;
     }
     header .main_nav .logo .logo_img{
-        width: 16vw !important;
+        width: 18vw !important;
     }
 
     /* convenient */
@@ -439,7 +439,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 380px){
   /* header */
   header .main_nav .logo .logo_img{
-    width: 14.5vw !important;
+    width: 16.5vw !important;
 }
 
 }

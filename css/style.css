@@ -267,6 +267,7 @@ body::-webkit-scrollbar-thumb:hover {
         margin-top: 5vw;
     }
     /* ---- Terms & Conditions --------------------------------------------------------------*/
+    .aboutus .aboutus_body,
     .trm_cndts .trm_cndts_body{
         width:min(800px, 80%);
     }
@@ -370,6 +371,7 @@ body::-webkit-scrollbar-thumb:hover {
         background-color: var(--clr-prm);
     }
    /* ---- Terms & Conditions --------------------------------------------------------------*/
+   .aboutus .aboutus_body,
    .trm_cndts .trm_cndts_body{
     width:min(700px, 85%);
 }
@@ -432,6 +434,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
     
      /* ---- Terms & Conditions --------------------------------------------------------------*/
+   .aboutus .aboutus_body,
    .trm_cndts .trm_cndts_body{
     width:min(500px, 85%);
     

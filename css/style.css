@@ -434,6 +434,11 @@ body::-webkit-scrollbar-thumb:hover {
      /* ---- Terms & Conditions --------------------------------------------------------------*/
    .trm_cndts .trm_cndts_body{
     width:min(500px, 85%);
+    
+}
+/* footer */
+footer .h_footer_link + .h_footer_link{
+    margin-left: 1rem ;
 }
 }
 @media (max-width: 380px){

@@ -291,7 +291,7 @@ body::-webkit-scrollbar-thumb:hover {
         grid-template-columns: repeat(3, 32%) !important;
     }
     .h_how_it_works_main .h_how_it_works_cards .h_how_it_works_cards_body{
-        min-height: 15.5rem !important;
+        min-height: 20.5rem !important;
     }
     
 /* ---- meet your doc --------------------------------------------------------------*/
@@ -425,7 +425,7 @@ body::-webkit-scrollbar-thumb:hover {
         width: 80% !important;
     }
     .h_how_it_works_main .h_how_it_works_cards .h_how_it_works_cards_body{
-        min-height: 8.5rem !important;
+        min-height: 10.5rem !important;
     }
     .h_how_it_works_cards + .h_how_it_works_cards{
         margin-top: 2rem;
@@ -690,6 +690,9 @@ header .main_nav .header_nav_links + .header_nav_links{
     margin: 3rem auto 0 auto;
     transition: all .2s ease;
 }
+.treatment_offers_show_more_btn + .treatment_offers_show_more_btn{
+    margin-left: .8rem;
+}
 
 /* ---- how it works --------------------------------------------------------------*/
 .h_how_it_works{
@@ -716,7 +719,7 @@ header .main_nav .header_nav_links + .header_nav_links{
     justify-content: space-between;
 }
 .h_how_it_works_main .h_how_it_works_cards .h_how_it_works_cards_body{
-    min-height: 10rem;
+    min-height: 13rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -835,14 +838,29 @@ footer .h_footer_link:nth-child(3){
 .h_footer_link + .h_footer_link{
     margin-left: 3rem;
 }
+.footer_bottom{
+    padding-top: .2em;
+}
+.footer_bottom p{
+    margin-top: 1.5rem;
+    font-size: .8rem;
+    color: var(--clr-darkgrey3);
+    font-weight: 500;
+    line-height: 1.4;
+}
+.footer_bottom p + p{
+    margin-top: .2rem;
+}
 
 /* ----- faq ------------------------------------------------------- */
+.aboutus__head,
 .trm_cndts__head,
 .privacy_policy__head,
 .faq_head{
     padding: 5.5em 0 1.2em 0;
     background-color: var(--clr-lightblue-bg);
 }
+.aboutus_head_title,
 .trm_cndts_head_title,
 .privacy_policy_head_title,
 .faq_head_title{
@@ -989,12 +1007,17 @@ footer .h_footer_link:nth-child(3){
 /* ----- Privacy Policy ------------------------------------------------------- */
 
 /* ----- Terms & Conditions ------------------------------------------------------- */
+.aboutus_body,
+.privacy_policy_body,
 .trm_cndts_body{
 	width: min(950px, 95%);
 	margin: auto;
     padding-top: 3em;
 }
-
+.aboutus .aboutus_body h2{
+    margin-bottom: .7rem;
+}
+.aboutus_body h2,
 .privacy_policy_body h2,
 .trm_cndts_body h2{
     font-size: 1.67rem;
@@ -1003,6 +1026,8 @@ footer .h_footer_link:nth-child(3){
     font-weight: 700;
     line-height: 1.1;
 }
+
+.aboutus_body h3,
 .privacy_policy_body h3,
 .trm_cndts_body h3{
     font-size: 1.25rem;
@@ -1012,6 +1037,7 @@ footer .h_footer_link:nth-child(3){
     font-weight: 600;
     line-height: 1.1;
 }
+.aboutus_body p,
 .privacy_policy_body p,
 .trm_cndts_body p{
     font-size: .8rem;
@@ -1020,6 +1046,10 @@ footer .h_footer_link:nth-child(3){
     line-height: 1.6;
     margin: 0 0 .9rem;
 }
+.aboutus .aboutus_body p{
+    margin: 0 0 1.8rem;
+}
+.aboutus_body h4,
 .privacy_policy_body h4,
 .trm_cndts_body h4{
     font-size: 1rem;
@@ -1029,18 +1059,22 @@ footer .h_footer_link:nth-child(3){
     font-weight: 600;
     line-height: 1.1;
 }
+.aboutus_body a,
 .privacy_policy_body a,
 .trm_cndts_body a{
     font-size: .75rem;
     color: var(--clr-sec);
     font-weight: 500;
 }
+.aboutus_body a:hover,
+.aboutus_body a:focus,
 .privacy_policy_body a:hover,
 .privacy_policy_body a:focus,
 .trm_cndts_body a:hover,
 .trm_cndts_body a:focus{
     text-decoration: underline;
 }
+.aboutus_body ul,
 .privacy_policy_body ul,
 .trm_cndts_body ul{
     font-size: .8rem;
@@ -1050,6 +1084,7 @@ footer .h_footer_link:nth-child(3){
     list-style-type: disc;
     padding-left: 2.5em;
 }
+.aboutus_body ul li ,
 .privacy_policy_body ul li ,
 .trm_cndts_body ul li {
     margin-bottom: .8rem;

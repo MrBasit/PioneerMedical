@@ -66,6 +66,7 @@ img{
   --clr-darkgrey2:#969696;
   --clr-darkgrey3:#585858;
   --clr-lightblue-bg:#33b5e5;
+  --clr-f-links:#79d2f5;
 
 
 
@@ -257,14 +258,7 @@ body::-webkit-scrollbar-thumb:hover {
         min-height: 16.5rem !important;
     }
 
-    /* ---- meet your doc --------------------------------------------------------------*/
-    .meet_your_doc .meet_your_doc_content{
-        padding-top: 6vw;
-        
-    }
-    .meet_your_doc .meet_your_doc_link{
-        margin-top: 5vw;
-    }
+    
     /* ---- Terms & Conditions --------------------------------------------------------------*/
     .aboutus .aboutus_body,
     .trm_cndts .trm_cndts_body{
@@ -290,36 +284,13 @@ body::-webkit-scrollbar-thumb:hover {
       .treatment_offers_main{
         grid-template-columns: repeat(3, 32%) !important;
     }
+    .treatment_offers_main .treatment_offers_cards:nth-child(n+4) {
+        margin-top: 3rem;  
+    }
     .h_how_it_works_main .h_how_it_works_cards .h_how_it_works_cards_body{
         min-height: 20.5rem !important;
     }
-    
-/* ---- meet your doc --------------------------------------------------------------*/
-
-.meet_your_doc_main{
-    background-image: linear-gradient(transparent 35%, var(--clr-sec) 55%) !important;
-    /* background-image: linear-gradient(transparent 40%, #030A34  60%); */
-}
-.meet_your_doc .meet_your_doc_main .meet_your_doc_img_main img{
-    z-index: -1;
-    position: relative;
-}
-
-.meet_your_doc .meet_your_doc_main .meet_your_doc_img_main{
-    width: 100%;
-   
-}
-.meet_your_doc .meet_your_doc_main .meet_your_doc_content{
-    width: 100%;
-    background-color: transparent;
-    padding: 0em 2em 4em 2em;
-}
-.meet_your_doc .meet_your_doc_content .meet_your_doc_title{
-    font-size: 3.5rem;
-}
-.meet_your_doc .meet_your_doc_content .meet_your_doc_link{
-    font-size: 1.5rem;
-}
+  
     /* faq */
     /* ----  --------------------------------------------------------------*/
     .faq_menu_btn{
@@ -416,6 +387,9 @@ body::-webkit-scrollbar-thumb:hover {
       /* treatment offers */
       .treatment_offers_main{
         grid-template-columns: repeat(2, 45%) !important;
+    }
+    .treatment_offers_main .treatment_offers_cards:nth-child(n+3) {
+        margin-top: 3rem;  
     }
     /* how it works */
     .h_how_it_works_main{
@@ -638,11 +612,14 @@ header .main_nav .header_nav_links + .header_nav_links{
     background-color: var(--clr-white);
     padding: 1.6em 0;
     border-radius: .3rem;
-    margin-top: 4.3rem;
+ 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: all .3s ease-in-out;
+}
+.treatment_offers_cards:nth-child(n+5) {
+    margin-top: 3rem;  
 }
 .treatment_offers_cards:focus,
 .treatment_offers_cards:hover{
@@ -700,7 +677,28 @@ header .main_nav .header_nav_links + .header_nav_links{
     border-color: rgba(220, 53, 69, 1);
     color: var(--clr-white);
 }
-
+.most_cmn_show_all_btns{
+    align-self: flex-start;
+}
+.show_all_btn,
+.most_common_btn{
+    margin-top: 2.5rem;
+    font-size: .7rem;
+}
+.show_all_btn.active,
+.most_common_btn.active{
+    background-color: var(--clr-white);
+    color: var(--clr-prm);
+    font-weight: 700;
+}
+.show_tiles_btn.active{
+    display: none;
+}
+.treamentTitle{
+    font-size: .9rem;
+    margin: 2rem 0 1rem 0;
+    align-self: flex-start;
+}
 /* ---- how it works --------------------------------------------------------------*/
 .h_how_it_works{
     padding: 3.8em 0;
@@ -756,73 +754,12 @@ header .main_nav .header_nav_links + .header_nav_links{
     
 }
 
-/* ---- meet your doc --------------------------------------------------------------*/
-.meet_your_doc_main{
-    border-top: 1px solid var(--clr-prm);
-    background-image: linear-gradient(transparent 0%, var(--clr-sec)  0%);
-}
-.meet_your_doc_img_main{
-    display: inline-block;
-    vertical-align: top;
-    width: 60%;
-}
-.meet_your_doc_content{
-    display: inline-block;
-    vertical-align: top;
-    width: 39%;
-    padding-top: 9vw;
-    background-color: var(--clr-sec);
-    text-align: center;
 
-}
-.meet_your_doc_title{
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-    font-size: 2.4rem;
-    color: var(--clr-white);
-    font-weight: 400;
-    line-height: 1.1;
-}
-.meet_your_doc_link{
-    margin-top: 9vw;
-    font-size: 1.1rem;
-    padding: .55em 1.85em;
-    font-weight: 600;
-    width: max-content;
- 
-    color: var(--clr-white);
-    display: inline-block;
-    border-radius: 2rem;
-    letter-spacing: .05rem;
-    
-    transition: all .3s ease;
-    border: .2rem solid var(--clr-white);
-    background-color: transparent;
-}
-.meet_your_doc_link:hover,
-.meet_your_doc_link:focus{
-    
-    background-color: var(--clr-prm);
-    border: .2rem solid var(--clr-prm);
-}
-@media (max-width: 1145px){
-    .meet_your_doc .meet_your_doc_content{
-        padding-top: 8vw;
-    
-    }
-    .meet_your_doc .meet_your_doc_link{
-        margin-top: 5.5vw;
-    }  
-    .meet_your_doc .meet_your_doc_title{
-        font-size: 2.1rem;
-    }
-    .meet_your_doc .meet_your_doc_link{
-        font-size: 1rem;
-    }
-}
 /* ---- footer --------------------------------------------------------------*/
 footer{
     padding: 4em 0 2em 0;
+    background-color: var(--clr-prm);
+    color: var(--clr-white);
 }
 footer .h_footer_main{
     display: flex;
@@ -830,14 +767,14 @@ footer .h_footer_main{
 }
 footer .h_footer_link{
     font-size: .9rem;
-    color: var(--clr-sec);
+    color: var(--clr-f-links);
     font-weight: 700;
     letter-spacing: 0.04em;
     transition: color .3s ease-in-out;
 }
 footer .h_footer_link:hover,
 footer .h_footer_link:focus{
-    color: var(--clr-prm);
+    color: var(--clr-white);
 }
 footer .h_footer_link:nth-child(3){
     margin-left: auto;
@@ -850,8 +787,8 @@ footer .h_footer_link:nth-child(3){
 }
 .footer_bottom p{
     margin-top: 1rem;
-    font-size: .8rem;
-    color: var(--clr-darkgrey3);
+    font-size: .6rem;
+    color: var(--clr-darkgrey2);
     font-weight: 500;
     line-height: 1.4;
 }
@@ -891,9 +828,6 @@ footer .h_footer_link:nth-child(3){
     font-weight: 400;
     margin-bottom: .3rem;
 }
-.faq_body_content aside{
-    /* padding: .6em 3em .6em 0; */
-}
 /* ----- */
 .faq_body_content aside .ques_catogoris li{
     color: var(--clr-white);
@@ -910,7 +844,6 @@ footer .h_footer_link:nth-child(3){
 
 .faq_body_content .faq_content .con{
     position: absolute;
-    /* max-height: 0% !important; */
     height: 0;
     max-width: 100%;
     opacity: 0;
@@ -918,7 +851,6 @@ footer .h_footer_link:nth-child(3){
     pointer-events: none;
 }
 .faq_body_content .faq_content .con.active-content{
-    /* max-height: 100%; */
     height: 100%;
     opacity: 1;
     pointer-events: all;

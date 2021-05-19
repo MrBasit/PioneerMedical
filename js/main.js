@@ -28,9 +28,11 @@ try {
 
 
   // PAGINATION
+  let allTiles = true;
   let cur = 0;
   const numOfItemsPerPage = 12;
   let allTilesOnDom;
+  // ALL TILES
   const tiles = [
     {
       "link": "Erectile Dysfunction",
@@ -181,8 +183,40 @@ try {
       "num": 38
     }
   ];
+  // MOST COMMON TILES
+  const mostCommonTiles = [
+    {
+      "link": "Hyperhidrosis",
+      "num": 1
+    },
+    {
+      "link": "Stop Smoking",
+      "num": 2
+    },
+    {
+      "link": "Acne",
+      "num": 4
+    },
+    {
+      "link": "Hair Loss",
+      "num": 5
+    },
+    {
+      "link": "Hyperhidrosis",
+      "num": 6
+    },
+    {
+      "link": "Primary Care Video Visit",
+      "num": 7
+    },
+    {
+      "link": "Erectile Dysfunction",
+      "num": 8
+    }
+  ]
   // PAGINATION EVENTS
-  document.querySelector('.show_tiles_btn').addEventListener('click', showTilesEvent);
+  let showMoreBtn = document.querySelector('.show_tiles_btn');
+  showMoreBtn.addEventListener('click', showTilesEvent);
   function showTilesEvent(e) {
     if (e.target.classList.contains('show_less')) {
       goLess();
@@ -190,16 +224,48 @@ try {
       goNext();
     }
   }
+  // TTILES CATOGORIES
+  let mstCmnTilesBtn = document.querySelector('.most_common_btn');
+  mstCmnTilesBtn.addEventListener('click', showMostCommonTiles);
+  let allTilesBTn = document.querySelector('.show_all_btn');
+  allTilesBTn.addEventListener('click', showAllTilesEvent);
+  let showingTilesHeading = document.querySelector('.trmentsTilesShowing');
+ 
+
+  function showMostCommonTiles(e){
+    showMoreBtn.classList.add('active');
+    mstCmnTilesBtn.classList.add('active');
+    allTilesBTn.classList.remove('active');
+    showingTilesHeading.innerHTML = `${e.target.innerHTML}`;
+    allTiles = false;
+    renderTilse();
+  }
+  function showAllTilesEvent(e){
+    showMoreBtn.classList.remove('active');
+    mstCmnTilesBtn.classList.remove('active');
+    allTilesBTn.classList.add('active');
+    showingTilesHeading.innerHTML = `${e.target.innerHTML}`;
+    allTiles = true;
+    renderTilse();
+  }
   // RENDER TILES
   document.addEventListener("DOMContentLoaded", renderTilse);
   function renderTilse() {
+    if(!allTiles){
+      // SHOW TILES
+      showTiles(mostCommonTiles);
+      cur = 0;
+    }else{  
+      // SHOW TILES
+      showTiles(tiles);
+      // HIDE ALL TILES
+      hideAllTilse();
 
-    // SHOW TILES
-    showTiles(tiles);
-    // HIDE ALL TILES
-    hideAllTilse();
+      goToPage(cur);
+    }
+ 
 
-    goToPage(cur);
+   
   }
   // Show all tiles
   function showTiles(alltiles) {

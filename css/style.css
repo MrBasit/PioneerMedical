@@ -24,7 +24,9 @@ body{
 	color: var(--clr-prm) ;
 	background-color: var(--text-white) ;
   }
-  
+body.ov-hidden{
+    overflow: hidden;
+}
 /* 
 Typograpy Stuff
 */
@@ -227,7 +229,9 @@ body::-webkit-scrollbar-thumb:hover {
         padding: 0.3em 3em 1em !important;
     }
     .faq_body_content .faq_content .content{
-        position: relative;   
+        position: relative; 
+        /* ======= */
+        display: none;
     }
     .faq_body_content .faq_content .content::before{
         content: '';
@@ -412,20 +416,12 @@ body::-webkit-scrollbar-thumb:hover {
     width:min(500px, 85%);
     
 }
-/* footer */
-footer .h_footer_link + .h_footer_link{
-    margin-left: auto ;
-}
 }
 
 @media (max-width: 380px){
   /* header */
   header .main_nav .logo .logo_img{
     width: 16.5vw !important;
-}
-/* footer */
-footer .h_footer_link + .h_footer_link{
-    margin-left: auto;
 }
 
 }
@@ -677,9 +673,6 @@ header .main_nav .header_nav_links + .header_nav_links{
     border-color: rgba(220, 53, 69, 1);
     color: var(--clr-white);
 }
-.most_cmn_show_all_btns{
-    align-self: flex-start;
-}
 .show_all_btn,
 .most_common_btn{
     margin-top: 2.5rem;
@@ -764,6 +757,7 @@ footer{
 footer .h_footer_main{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 footer .h_footer_link{
     font-size: .9rem;
@@ -775,12 +769,6 @@ footer .h_footer_link{
 footer .h_footer_link:hover,
 footer .h_footer_link:focus{
     color: var(--clr-white);
-}
-footer .h_footer_link:nth-child(3){
-    margin-left: auto;
-}
-.h_footer_link + .h_footer_link{
-    margin-left: 3rem;
 }
 .footer_bottom{
     padding-top: .2em;
@@ -858,7 +846,9 @@ footer .h_footer_link:nth-child(3){
    
     transition: opacity .7s ease;
 }
-
+.faq_body_content .faq_content .con.active-content .content{
+    display: block;
+}
 
 .faq_body_content .con .faq_qu{
     pointer-events: none;
@@ -1027,4 +1017,8 @@ footer .h_footer_link:nth-child(3){
 .privacy_policy_body ul li ,
 .trm_cndts_body ul li {
     margin-bottom: .8rem;
+}
+/* privacy and policy */
+.privacy_policy_body{
+    padding-bottom: 3em;
 }

@@ -356,7 +356,7 @@ body::-webkit-scrollbar-thumb:hover {
         padding: 10em 0;
     }
     .contact_us .contact_us_banner h1{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .contact_us .contact_us_content .contact_row{
         flex-direction: column;

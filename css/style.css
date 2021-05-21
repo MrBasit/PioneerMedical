@@ -389,7 +389,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
     /* header */
     header .main_nav .header_nav_links{
-        font-size: 0.74rem !important;
+        font-size: 0.72rem !important;
     }
     header .main_nav .logo .logo_img{
         width: 18vw !important;

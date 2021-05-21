@@ -366,6 +366,10 @@ body::-webkit-scrollbar-thumb:hover {
 
         padding: 1em 0 !important;
     }
+    /* footer */
+    footer .h_footer_link{
+        font-size: .7rem !important;
+    }
 }
 /* Responsive Small Mobile */
 @media (max-width: 576px){

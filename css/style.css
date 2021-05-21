@@ -347,10 +347,25 @@ body::-webkit-scrollbar-thumb:hover {
    /* ---- Terms & Conditions --------------------------------------------------------------*/
    .aboutus .aboutus_body,
    .trm_cndts .trm_cndts_body{
-    width:min(700px, 85%);
-}
-    
-    
+       width:min(700px, 85%);
+    }
+    /* ---- Contact Us --------------------------------------------------------------*/
+    .contact_us .contact_us_banner{
+        padding: 11em 0;
+    }
+    .contact_us .contact_us_banner h1{
+        font-size: 3.5rem;
+    }
+    .contact_us .contact_us_content .contact_row{
+        flex-direction: column;
+    }
+    .contact_us_content .contact_row input + input{
+        margin-left: 0rem;
+    }
+    .contact_us_content .contact_us_submut_btn_clearfix button{
+
+        padding: 1em 0 !important;
+    }
 }
 /* Responsive Small Mobile */
 @media (max-width: 576px){
@@ -750,7 +765,7 @@ header .main_nav .header_nav_links + .header_nav_links{
 
 /* ---- footer --------------------------------------------------------------*/
 footer{
-    padding: 4em 0 2em 0;
+    padding: 3em 0 2em 0;
     background-color: var(--clr-prm);
     color: var(--clr-white);
 }
@@ -942,6 +957,7 @@ footer .h_footer_link:focus{
 	width: min(950px, 95%);
 	margin: auto;
     padding-top: 3em;
+    padding-bottom: 3em;
 }
 .aboutus .aboutus_body h2{
     margin-bottom: .7rem;
@@ -1018,7 +1034,77 @@ footer .h_footer_link:focus{
 .trm_cndts_body ul li {
     margin-bottom: .8rem;
 }
-/* privacy and policy */
-.privacy_policy_body{
-    padding-bottom: 3em;
+/* ----- contact us ------------------------------------------------------- */
+.contact_us_banner{
+    background-image: linear-gradient(
+180deg
+,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%),url(../img/contact\ us\ banner.jpg)!important;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+    padding: 7.5em 0;
+}
+.contact_us_banner h1{
+     font-size: 2.6rem;
+     color: var(--clr-white);
+     font-weight: 500;
+     text-transform: uppercase;
+}
+.contact_us_content{
+    padding: 5em 0;
+}
+.contact_us_content .contact_us_title{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.contact_us_content .contact_row{
+    display: flex;
+}
+.contact_us_content input,
+.contact_us_content textarea{
+    border: 1px solid #bbb;
+    width: 100%;
+    padding: .9rem;
+    color: #999;
+    background-color: transparent;
+    font-size: .9rem;
+    -webkit-appearance: none;
+    margin-top: 1.8rem;
+    transition: color .3s, border-color .3s;
+}
+.contact_us_content input + input{
+    margin-left: 1.7rem;
+}
+.contact_us_content input:focus,
+.contact_us_content textarea:focus{
+    border: 1px solid var(--clr-sec);
+    outline: none;
+    color: #3e3e3e;
+}
+.contact_us_content .contact_us_submut_btn_clearfix{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1.8rem;
+}
+.contact_us_content .contact_us_submut_btn_clearfix p{
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    color: var(--clr-lightgrey3);
+}
+.contact_us_content .contact_us_submut_btn_clearfix p .clearfix{
+    width: max-content;
+}
+.contact_us_content .contact_us_submut_btn_clearfix p input{
+    margin-top: 0;
+    max-width: 3rem;
+    margin-right: 1rem;
+}
+.contact_us_content .contact_us_submut_btn_clearfix button{
+  
+
+    font-size: .85rem;
+    padding: .8em 0;
+    width: 6.5rem;
 }

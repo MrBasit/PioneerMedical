@@ -361,11 +361,10 @@ body::-webkit-scrollbar-thumb:hover {
     .contact_us .contact_us_content .contact_row{
         flex-direction: column;
     }
-    .contact_us_content .contact_row input + input{
+    .contact_us .contact_us_content .contact_row input + input{
         margin-left: 0rem;
     }
     .contact_us_content .contact_us_submut_btn_clearfix button{
-
         padding: 1em 0 !important;
     }
     /* footer */
@@ -1079,7 +1078,7 @@ background-repeat: no-repeat;
     margin-top: 1.8rem;
     transition: color .3s, border-color .3s;
 }
-.contact_us_content input + input{
+.contact_us_content .contact_row input + input{
     margin-left: 1.7rem;
 }
 .contact_us_content input:focus,

@@ -806,6 +806,9 @@ footer .h_footer_link:focus{
 }
 
 /* ----- faq ------------------------------------------------------- */
+.faq{
+    min-height: 80vh;
+}
 .aboutus__head,
 .trm_cndts__head,
 .privacy_policy__head,

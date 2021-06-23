@@ -416,3 +416,42 @@ try {
   console.log('Faq Page Not Found');
 
 }
+
+
+
+// animated counter calculatio table
+const counters = document.querySelectorAll('.count');
+// // Main function
+for(let n of counters) {
+  const updateCount = () => {
+    const target = + n.getAttribute('data-target');
+    const count = + n.innerText;
+    const speed = 1000; // change animation speed here
+    const inc = target / speed; 
+    if(count < target) {
+      n.innerText = Math.ceil(count + inc);
+      setTimeout(updateCount, 10);
+    } else {
+      n.innerText = target;
+    }
+  }
+  updateCount();
+}
+
+
+
+// side bar open and close
+function openNav() {
+  document.getElementById("s2").style.left= "0";
+  document.getElementById("s2").style.position= "fixed";
+  document.getElementById("s2").style.transition= "all .8s ease-in-out";
+}
+
+function closeNav() {
+  document.getElementById("s2").style.left = "-100%";
+  document.getElementById("s1").style.display= "block";
+  document.getElementById("s2").style.transition= "left 1s ease-in-out";
+}
+
+
+

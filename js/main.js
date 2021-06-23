@@ -444,7 +444,7 @@ for(let n of counters) {
 function openNav() {
   document.getElementById("s2").style.left= "0";
   document.getElementById("s2").style.position= "fixed";
-  document.getElementById("s2").style.transition= "all .8s ease-in-out";
+  document.getElementById("s2").style.transition= "all .5s ease";
 }
 
 function closeNav() {

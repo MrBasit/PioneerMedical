@@ -819,7 +819,7 @@ header .main_nav .header_nav_links + .header_nav_links{
 
 /* calculation table ------------------------------------------------------------- */
 #calculation{
-    background-color: var(--clr-sec);
+    background-color: var(--clr-prm);
     color: #ffffff;
 }
 .calculation-main{
@@ -1336,47 +1336,9 @@ article .test_Dr{
     margin:0 10px;
 }
 
-.dropbtn i{
-    margin: 0 8px 0 5px;
+.flat-icon{
+    margin: 0 5px 0 4px;
 }
-.dropbtn {
-    background-color:transparent;
-    color: white;
-    padding:10px 40px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: relative;
-    background-color:var(--clr-prm);
-    min-width: 160px;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: white;
-    padding: 10px 40px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {    background-color:var(--clr-prm);}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown:hover .d-r {
-   transform: rotate(90deg);
-   transition: transform .4s ease ;
-  }
 
   .side-nav-div1{
    border-bottom: 1px solid gray;

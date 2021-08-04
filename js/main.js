@@ -453,5 +453,76 @@ function closeNav() {
   document.getElementById("s2").style.transition= "left 1s ease-in-out";
 }
 
+// index2
+
+  // Toggle Menu 
+
+  var navLinks = document.getElementById("toggle.menu");
+
+  function showMenu() {
+      navLinks.style.right = "0px";
+  }
+
+  function hideMenu() {
+      navLinks.style.right = "-300px";
+  }
+
+  //showdata after clicking on btn
+  var w = document.getElementById("Myid");
+  var x = document.getElementById("Myidd");
+  var y = document.getElementById("btn-1");
+  var z = document.getElementById("btn-2");
+  
+  function showData(){
+      w.style.display = "block";
+      x.style.display= "none";
+      y.style.background="#056998";
+      y.style.color="white"
+      z.style.background="white";
+      z.style.color="#056998"
+  }
+
+
+  function showData2() {
+    x.style.display = "block";
+    w.style.display="none";
+    y.style.background="white";
+    y.style.color="#056998"
+    z.style.background="#056998";
+    z.style.color="white"
+}
+
+  // Get all Accordion and Panel
+  let accHeading = document.querySelectorAll(".accordion");
+  let accPanel = document.querySelectorAll(".accordion-panel");
+
+  for (let i = 0; i < accHeading.length; i++) {
+      // Execute whenever an accordion is clicked 
+      accHeading[i].onclick = function () {
+          if (this.nextElementSibling.style.maxHeight) {
+              hidePanels();     // Hide All open Panels 
+          } else {
+              showPanel(this);  // Show the panel
+          }
+      };
+  }
+
+  // Function to Show a Panel
+  function showPanel(elem) {
+      hidePanels();
+      elem.classList.add("active");
+      elem.nextElementSibling.style.maxHeight = elem.nextElementSibling.scrollHeight + "px";
+  }
+
+  // Function to Hide all shown Panels
+  function hidePanels() {
+      for (let i = 0; i < accPanel.length; i++) {
+          accPanel[i].style.maxHeight = null;
+          accHeading[i].classList.remove("active");
+      }
+  }
+
+  accHeading[0].click();
+
 
 

@@ -414,7 +414,7 @@ section.content-1 {
 }
 
 .col-1-innerdata {
-  height: 110px;
+  height: 120px;
   padding: 25px;
   padding-bottom: 15px;
   display: flex;
@@ -425,7 +425,7 @@ section.content-1 {
 .col-1-innerdata p {
   font-style: italic;
   text-align: initial;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 500;
   color: #7d7a7a;
 }
@@ -996,6 +996,10 @@ ul.footerul {
   .accordion {
     font-size: 15px;
     font-weight: 600;
+  }
+
+  .row-1 {
+    padding-bottom: 20px;
   }
 
   .accordion::after {

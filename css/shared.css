@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header Start  */
+
+header {
+  background-color: #9bc7d9;
+  padding: 10px 0;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.toggle-menu {
+  position: fixed;
+  background: #9bc7d9;
+  height: 100vh;
+  width: 300px;
+  top: 0;
+  right: -300px;
+  /* right: 0; */
+  text-align: center;
+  z-index: 2;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toggleitems {
+  background: none;
+  padding: 0px 30px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggleitems li {
+  list-style: none;
+  display: flex;
+  padding: 10px 12px;
+}
+
+nav .fa {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggle-btn1 {
+  display: inline-block;
+  background-color: #056998;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.toggle-btn2 {
+  display: inline-block;
+  background-color: white;
+  color: #056998;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 05px;
+  font-weight: bold;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.toggle-link1 {
+  text-decoration: none;
+  color: #056998;
+  font-weight: 500;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.toggle-link2 {
+  text-decoration: none;
+  color: #056998;
+  font-weight: 500;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.toggle-logo img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-btn1 {
+  display: inline-block;
+  background-color: #056998;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header-btn2 {
+  display: inline-block;
+  background-color: white;
+  color: #056998;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 05px;
+  font-weight: bold;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.header-link1 {
+  text-decoration: none;
+  color: #056998;
+  font-weight: 500;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.header-link2 {
+  text-decoration: none;
+  color: #056998;
+  font-weight: 500;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+i#bars {
+  color: #056998;
+  font-size: 25px;
+}
+
+/* Header End  */
+
+/* Footer Start  */
+
+footer {
+  background-color: #302f31;
+  padding: 20px 0;
+}
+
+.footerlinks {
+  padding: 0 40px;
+  padding-top: 20px;
+}
+
+ul.footerul {
+  background: none;
+  padding-left: 0;
+}
+
+.footerlinks ul {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.footerlinks ul li {
+  list-style: none;
+}
+
+.footerlinks ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #6496b1;
+  font-weight: 700;
+}
+
+.footerline hr {
+  background-color: #555557;
+  height: 2px;
+  border: none;
+}
+
+.footercontent p {
+  color: white;
+  text-align: center;
+  padding: 30px 130px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* Footer End  */
+
+/* Media queries for Header and footer  */
+
+@media (max-width: 1024px) {
+  .footercontent p {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 929px) {
+  .logo img {
+    height: 50px;
+  }
+
+  .header-btn1 {
+    display: none;
+  }
+
+  .header-btn2 {
+    display: none;
+  }
+
+  .header-link1 {
+    display: none;
+  }
+
+  .header-link2 {
+    display: none;
+  }
+
+  .footercontent p {
+    padding: 30px 10px;
+  }
+
+  .footerlinks {
+    /* padding: 0; */
+  }
+}
+
+@media (max-width: 768px) {
+  .footerlinks ul li a {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .footercontent p {
+    padding: 30px 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 40px;
+  }
+  .logo img {
+    height: 40px;
+  }
+
+  i#bars {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 591px) {
+  .footerlinks ul {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+}

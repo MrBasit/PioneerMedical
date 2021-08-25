@@ -10,6 +10,7 @@
     <title>PIONEER TELEMEDICINE - Terms & Conditions</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shared.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="./css/font-awesome icons.css">
     <meta name="theme-color" content="#036992">
@@ -18,32 +19,60 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 </head>
-<!-- header -->
-<header class="">
-    <nav class="main_nav containers">
-        <a target="_self" href="https://pioneertech.azurewebsites.net/Account/Login"
-            class="header_nav_links btn btn_border">
-            doctor log in
-        </a>
-        <a href="aboutus.html" class="header_nav_links header_nav_grey header_nav_links_txt">
-            about
-        </a>
+<!-- Header -->
 
-        <a href="index2.html" class="logo">
-            <img class="logo_img" src="./img/logo.jpeg" alt="PIONEER TELEMEDICINE">
-        </a>
+<header>
 
-        <a href="faq.html" class="header_nav_links header_nav_grey header_nav_links_txt">
-            faq
-        </a>
-        <a target="_self" href="https://pioneertech.azurewebsites.net/Account/Login"
-            class="header_nav_links btn btn_bg">
-            patient log in
-        </a>
+    <div class="container">
 
-    </nav>
+        <nav>
+
+            <a href="index.html" class="logo"><img src="./img/logo1.png" alt="logoimage"></a>
+
+            <div class="nav-items">
+
+                <div class="items">
+
+                    <a href="https://pioneertech.azurewebsites.net/Account/Login"><button class="header-btn1">DOCTOR
+                            LOG IN</button></a>
+                    <a href="https://pioneertech.azurewebsites.net/Account/Login"><button class="header-btn2">PATIENT
+                            LOGIN</button></a>
+                    <a href="faq.html" class="header-link1">FAQ</a>
+                    <a href="aboutus.html" class="header-link2">ABOUT</a>
+                    <i class="fa fa-bars" onclick="showMenu()" id="bars"></i>
+
+                </div>
+
+                <div class="toggle-menu" id="toggle.menu">
+
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                    <ul class="toggleitems">
+
+                        <li><a href="https://pioneertech.azurewebsites.net/Account/Login"><button
+                                    class="toggle-btn1">DOCTOR LOG IN</button></a></li>
+                        <li><a href="https://pioneertech.azurewebsites.net/Account/Login"><button
+                                    class="toggle-btn2">PATIENT LOGIN</button></a></li>
+                        <li><a href="faq.html" class="toggle-link1">FAQ</a></li>
+                        <li><a href="aboutus.html" class="toggle-link2">ABOUT</a></li>
+
+                    </ul>
+
+                    <a href="index.html" class="toggle-logo"><img src="./img/logo1.png" alt="logoimage"></a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    </div>
+
 </header>
-<!-- header end -->
+<!-- Header end new  -->
+
 <!-- Terms & Conditions -->
 <section id="trm_cndts" class="trm_cndts">
     <div class="trm_cndts__head containers-lg">
@@ -158,25 +187,40 @@
     </div>
 </section>
 <!-- Terms & Conditions end -->
-<!-- footer -->
+<!-- Footer Start new  -->
+
 <footer>
-    <div class="containers h_footer_main">
-        <a href="faq.html" class="h_footer_link">FAQ</a>
-        <a href="trm&cndts.html" class="h_footer_link">Terms & Conditions</a>
-        <a href="privacypolicy.html" class="h_footer_link">Privacy Policy</a>
-        <a href="aboutus.html" class="h_footer_link">About</a>
-        <a href="index.html" class="h_footer_link">Treatments</a>
-        <a href="contactus.html" class="h_footer_link">Contact Us</a>
+
+    <div class="container">
+
+        <div class="footerlinks">
+            <ul class="footerul">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="trm&cndts.html">Terms & Conditions</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="index.html">Conditions</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footerline">
+            <hr>
+        </div>
+
+        <div class="footercontent">
+            <p>Pioneer Telemedicine is powered by Pioneer Technology Solutions, a Cloud based HIPAA compliant
+                platform and electronic records system with 128-bit encryption.
+
+                Server based anti-virus software for imported files to be scanned prior to upload into Software.
+                21 CFR Part 11 compliance.
+            </p>
+        </div>
+
     </div>
-    <div class="footer_bottom containers">
-        <p>Pioneer Telemedicine is powered by Pioneer Technology Solutions, a Cloud based HIPAA compliant platform and
-            electronic records system with 128-bit encryption.
-        </p>
-        <p>Server based anti-virus software for imported files to be scanned prior to upload into Software. 21 CFR Part
-            11 compliance.</p>
-    </div>
+
 </footer>
-<!-- footer end -->
+
+<!-- Footer End new  -->
 
 <!-- javascript -->
 <script type="text/javascript" src="./js/main.js"></script>

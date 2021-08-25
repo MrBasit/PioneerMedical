@@ -3,273 +3,871 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/0e62a5467e.js" crossorigin="anonymous"></script>
     <!-- favicon -->
     <link rel="icon shortcut" href="./favicon.png" sizes="192x192" />
     <link rel="apple-touch-icon-precomposed" href="./favicon.png" />
-    <title>PIONEER TELEMEDICINE</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="./css/font-awesome icons.css">
-
-    <meta name="theme-color" content="#036992">
-    <meta name="msapplication-navbutton-color" content="#036992">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>PioneerHealth</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/style2.css">
 
 </head>
 
 <body>
-    <!-- header -->
-    <header class="">
-        <nav class="main_nav containers">
-            <a target="_self" href="https://pioneertech.azurewebsites.net/Account/Login"
-                class="header_nav_links btn btn_border">
-                doctor log in
-            </a>
-            <a href="aboutus.html" class="header_nav_links header_nav_grey header_nav_links_txt">
-                about
-            </a>
 
-            <a href="index.html" class="logo">
-                <img class="logo_img" src="./img/logo.jpeg" alt="PIONEER TELEMEDICINE">
-            </a>
+    <!-- Header -->
 
-            <a href="faq.html" class="header_nav_links header_nav_grey header_nav_links_txt">
-                faq
-            </a>
+    <header>
 
-            <a target="_self" href="https://pioneertech.azurewebsites.net/Account/Login"
-                class="header_nav_links btn btn_bg">
-                patient log in
-            </a>
+        <div class="container">
 
-        </nav>
+            <nav>
+
+                <a href="index.html" class="logo"><img src="./img/logo1.png" alt="logoimage"></a>
+
+                <div class="nav-items">
+
+                    <div class="items">
+
+                        <a href="https://pioneertech.azurewebsites.net/Account/Login"><button class="header-btn1">DOCTOR
+                                LOG IN</button></a>
+                        <a href="https://pioneertech.azurewebsites.net/Account/Login"><button
+                                class="header-btn2">PATIENT LOGIN</button></a>
+                        <a href="faq.html" class="header-link1">FAQ</a>
+                        <a href="aboutus.html" class="header-link2">ABOUT</a>
+                        <i class="fa fa-bars" onclick="showMenu()" id="bars"></i>
+
+                    </div>
+
+                    <div class="toggle-menu" id="toggle.menu">
+
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                        <ul class="toggleitems">
+
+                            <li><a href="https://pioneertech.azurewebsites.net/Account/Login"><button
+                                        class="toggle-btn1">DOCTOR LOG IN</button></a></li>
+                            <li><a href="https://pioneertech.azurewebsites.net/Account/Login"><button
+                                        class="toggle-btn2">PATIENT LOGIN</button></a></li>
+                            <li><a href="faq.html" class="toggle-link1">FAQ</a></li>
+                            <li><a href="aboutus.html" class="toggle-link2">ABOUT</a></li>
+
+                        </ul>
+
+                        <a href="index.html" class="toggle-logo"><img src="./img/logo1.png" alt="logoimage"></a>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+        </div>
+
     </header>
-    <!-- header end -->
-    <!-- convenient -->
-    <section id="convenient" class="convenient containers-lg">
-        <div class="containers">
-            <div class="main_convenient">
-                <div class="convenient_collapse">
-                    <ul class="convenient_collapse_list">
-                        <li class="convenient_collapse_list_items">
-                            <p class="convenient_collapse_list_item h_title"> patient driven <span
-                                    class="convenient_collapse_list_item_plus_trigger"></span></p>
-                            <div class="convenient_collapse_sub_item_content">
-                                Now more than ever, patients want the care they deserve along the convenience of today’s
-                                environment. No more waiting for weeks to schedule your appointment.
-                            </div>
-                        </li>
-                        <li class="convenient_collapse_list_items">
-                            <p class="convenient_collapse_list_item h_title"> doctor approved <span
-                                    class="convenient_collapse_list_item_plus_trigger"></span></p>
-                            <div class="convenient_collapse_sub_item_content">
-                                Our certified and licensed doctors provide the upmost care for their patient’s. They are
-                                provided with HIPAA compliant software to perform online virtual health consultations.
-                            </div>
-                        </li>
-                        <li class="convenient_collapse_list_items">
-                            <p class="convenient_collapse_list_item h_title"> healthcare re-invented <span
-                                    class="convenient_collapse_list_item_plus_trigger"></span></p>
-                            <div class="convenient_collapse_sub_item_content">
-                                The healthcare industry is finally catching up to so many other industries. Patients are
-                                demanding for a more convenient, effective, and secured healthcare experience. Pioneer
-                                Telemedicine and its parent company, Pioneer Technology Solutions, are utilizing
-                                technology to evolve the patient’s journey.
-                            </div>
-                        </li>
 
+    <main>
+
+        <section class="hero">
+
+            <div class="container container-hero">
+
+                <div class="row-1">
+
+                    <div class="accordion-section">
+                        <h2 class="accordion">PATIENT DRIVEN</h2>
+                        <div class="accordion-panel">
+                            <p>Now more than ever, patients want the care they deserve along with the convenience of
+                                today’s
+                                technology. No more waiting weeks to schedule your appointment.</p>
+                        </div>
+
+                        <h2 class="accordion">DOCTOR APPROVED</h2>
+                        <div class="accordion-panel">
+                            <p>Our certified and licensed medical team provides the upmost care for their patient's.
+                                They perform online virtual health consultations thru a secured HIPAA compliant EMR
+                                platform.</p>
+                        </div>
+
+                        <h2 class="accordion">HEALTHCARE RE-INVENTED</h2>
+                        <div class="accordion-panel">
+                            <p> The healthcare industry is finally catching up to so many other industries. Patients are
+                                demanding for a more convenient, effective and secured healthcare experience. Pioneer
+                                Health utilizes technolgy to evolve your medical journey.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hero-content">
+
+                        <div class="content-heading">
+                            <h1>CONVENIENT</h1>
+                        </div>
+
+                        <div class="content-points">
+
+                            <ul>
+                                <li class="li-1">Consult with a doctor anywhere via chat, phone, video, or app </li>
+                                <li>Cheaper than most co-pays </li>
+                                <li>No more long waits at a germ filled DR's office </li>
+                                <li>Free next day delivery with a mail order pharmacy or local pharmacy pick up</li>
+                                <li>Over 900+ certified Us based licensed medical providers</li>
+                            </ul>
+                        </div>
+
+                        <div class="contentextralines">
+
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main-content">
+            <section class="content-1">
+
+                <div class="container">
+
+                    <div class="content-11">
+
+                        <h1 class="marginheading"></h1>
+
+                        <div class="content-11-btns">
+                            <h1 class="nomargin">MEDICAL CONDITION TREATED</h1>
+                            <button class="btn-1" id="btn-1" onclick="showData()">ALL</button>
+                            <button class="btn-2" id="btn-2" onclick="showData2()">MOST COMMON</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-2" id="Myid">
+
+                <div class="container">
+
+                    <div class="content-22">
+                        <h1>All Conditions</h1>
+
+                        <hr>
+                    </div>
+
+                    <div class="content-2-content">
+
+                        <div class="col-1-data">
+                            <h1>General Office Visit</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>The most convenient health care experience! <br> <br>
+                                    Speak with a medical provider and get treated all in the same day…as in
+                                    today.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Birth Control</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Hormone-Free Birth Control you have been waiting for…join the revolution. FDA
+                                    approved to prevent pregnancy, and you use it only when you need it.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Cold Sore</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Stop the outbreak in its track. Wedding day coming up? Big vacation planned?
+                                    Important social gathering? A pill a day keeps the outbreaks away. Free delivery
+                                    anywhere you may be.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Muscle Pain Relief</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Effective, Non-Opioid Pain relief to help you enjoy life again. FDA approved.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+
+                        <div class="col-1-data">
+                            <h1>FLUE & Cold</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Treatment for common cold and flu conditions including
+                                    fever,cough,sinus,infection,and sore throat.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+
+                        <div class="col-1-data">
+                            <h1>Acne</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Precription skincare for clinically proven results
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Testosterone Therapy</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Get back in the game! Feel energized and young again.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Hair Loss</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>There can be several reasons for hair loss. You should consult a healthcare
+                                    provider to start your treatment for fuller and thicker hair.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>UTI</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Urinary tract infection is one of the most common infections. If not treated
+                                    properly, this infection can seriously damage the kidneys, bladder and
+                                    overall
+                                    immune system.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Erectile Dysfunction</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>90% cheaper than the competition. Same medication, Same Free Discreet Delivery.
+                                    Everyone Wins!
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+
+                        <div class="col-1-data trans1">
+                            <h1>Irritable Bowel Syndrome</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>IBS doesn’t have to be a constant worry. Pursue another level of relief.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+
+                        <div class="col-1-data trans2">
+                            <h1>Hyperhidrosis</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Sweat No More!
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+
+                        <div class="moredata showhide" id="content">
+                            <div class="col-1-data">
+                                <h1>General Office Visit (12) </h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>The most convenient health care experience! <br> <br>
+                                        Speak with a medical provider and get treated all in the same day…as in
+                                        today.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Birth Control</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Hormone-Free Birth Control you have been waiting for…join the revolution. FDA
+                                        approved to prevent pregnancy, and you use it only when you need it.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Cold Sore</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Stop the outbreak in its track. Wedding day coming up? Big vacation planned?
+                                        Important social gathering? A pill a day keeps the outbreaks away. Free delivery
+                                        anywhere you may be.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Muscle Pain Relief</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Effective, Non-Opioid Pain relief to help you enjoy life again. FDA approved.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>FLUE & Cold</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Treatment for common cold and flu conditions including
+                                        fever,cough,sinus,infection,and sore throat.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Acne</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Precription skincare for clinically proven results
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Testosterone Therapy</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Get back in the game! Feel energized and young again.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Hair Loss</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>There can be several reasons for hair loss. You should consult a healthcare
+                                        provider to start your treatment for fuller and thicker hair.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>UTI</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Urinary tract infection is one of the most common infections. If not treated
+                                        properly, this infection can seriously damage the kidneys, bladder and
+                                        overall
+                                        immune system.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Erectile Dysfunction</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>90% cheaper than the competition. Same medication, Same Free Discreet Delivery.
+                                        Everyone Wins!
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data trans1">
+                                <h1>Irritable Bowel Syndrome</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>IBS doesn’t have to be a constant worry. Pursue another level of relief.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data trans2">
+                                <h1>Hyperhidrosis (12)</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Sweat No More!
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="content-2-btn">
+                        <button class="content-2-endbtn">SHOW MORE</button>
+                    </div>
+            </section>
+
+            <section class="content-2 mc" id="Myidd">
+
+                <div class="container">
+
+                    <div class="content-22">
+                        <h1>All Conditions (MC)</h1>
+
+                        <hr>
+                    </div>
+
+                    <div class="content-2-content">
+
+                        <div class="col-1-data">
+                            <h1>General Office Visit (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>The most convenient health care experience! <br> <br>
+                                    Speak with a medical provider and get treated all in the same day…as in today.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>FLUE & Cold (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Treatment for common cold and flu conditions including
+                                    fever,cough,sinus,infection,and sore throat.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>UTI (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Urinary tract infection is one of the most common infections. If not treated
+                                    properly, this infection can seriously damage the kidneys, bladder and overall
+                                    immune system.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Birth Control (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Hormone-Free Birth Control you have been waiting for…join the revolution. FDA
+                                    approved to prevent pregnancy, and you use it only when you need it.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Acne (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Precription skincare for clinically proven results
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Erectile Dysfunction (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>90% cheaper than the competition. Same medication, Same Free Discreet Delivery.
+                                    Everyone Wins!
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Cold Sore (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Stop the outbreak in its track. Wedding day coming up? Big vacation planned?
+                                    Important social gathering? A pill a day keeps the outbreaks away. Free delivery
+                                    anywhere you may be.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Testosterone Therapy (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Get back in the game! Feel energized and young again.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Irritable Bowel Syndrome (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>IBS doesn’t have to be a constant worry. Pursue another level of relief.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data">
+                            <h1>Muscle Pain Relief (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Effective, Non-Opioid Pain relief to help you enjoy life again. FDA approved.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data trans1">
+                            <h1>Hair Loss (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>There can be several reasons for hair loss. You should consult a healthcare
+                                    provider to start your treatment for fuller and thicker hair.
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="col-1-data trans2">
+                            <h1>Hyperhidrosis (MC)</h1>
+
+                            <div class="col-1-innerdata">
+                                <p>Sweat No More!
+                                </p>
+                                <button class="inner-btn">Get Started</button>
+                            </div>
+                        </div>
+
+                        <div class="moremc showhidden" id="content">
+                            <div class="col-1-data">
+                                <h1>General Office Visit (12) </h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>The most convenient health care experience! <br> <br>
+                                        Speak with a medical provider and get treated all in the same day…as in
+                                        today.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Birth Control</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Hormone-Free Birth Control you have been waiting for…join the revolution. FDA
+                                        approved to prevent pregnancy, and you use it only when you need it.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Cold Sore</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Stop the outbreak in its track. Wedding day coming up? Big vacation planned?
+                                        Important social gathering? A pill a day keeps the outbreaks away. Free delivery
+                                        anywhere you may be.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Muscle Pain Relief</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Effective, Non-Opioid Pain relief to help you enjoy life again. FDA approved.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>FLUE & Cold</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Treatment for common cold and flu conditions including
+                                        fever,cough,sinus,infection,and sore throat.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Acne</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Precription skincare for clinically proven results
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Testosterone Therapy</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Get back in the game! Feel energized and young again.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Hair Loss</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>There can be several reasons for hair loss. You should consult a healthcare
+                                        provider to start your treatment for fuller and thicker hair.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>UTI</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Urinary tract infection is one of the most common infections. If not treated
+                                        properly, this infection can seriously damage the kidneys, bladder and
+                                        overall
+                                        immune system.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data">
+                                <h1>Erectile Dysfunction</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>90% cheaper than the competition. Same medication, Same Free Discreet Delivery.
+                                        Everyone Wins!
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data trans1">
+                                <h1>Irritable Bowel Syndrome</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>IBS doesn’t have to be a constant worry. Pursue another level of relief.
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-1-data trans2">
+                                <h1>Hyperhidrosis (12)</h1>
+
+                                <div class="col-1-innerdata">
+                                    <p>Sweat No More!
+                                    </p>
+                                    <button class="inner-btn">Get Started</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="content-2-btn">
+                        <!-- <button class="content-2-endbtn mcbtn">SHOW MORE</button> -->
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="content-3">
+
+            <div class="container">
+
+                <div class="content-3-heading">
+
+                    <h1>HOW IT WORKS</h1>
+
+                </div>
+
+                <div class="content-33">
+
+                    <div class="content-33 one">
+
+                        <img src="./img/work.png" alt="work">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content-4">
+
+            <div class="container">
+
+                <div class="content-44">
+
+                    <div class="content-44 one">
+
+                        <div class="one-data">
+
+                            <h1 class="one-datah1">28%</h1>
+                            <p class="one-datap">Of young people in the United States
+                                do not have a Primary Care Provider.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="content-44 two">
+
+                        <div class="two-data">
+
+                            <h1 class="two-datah1">29</h1>
+                            <p class="two-datap">Is the average number of days
+                                patients wait for an appointment in
+                                the US.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="content-44 three">
+
+                        <div class="three-data">
+
+                            <h1 class="three-datah1">100,000+</h1>
+                            <p class="three-datap">Patients treated by our
+                                Medical providers</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-5">
+
+            <div class="container">
+
+                <div class="content-5-heading">
+
+                    <h1>Thanks for your feedback</h1>
+
+                </div>
+
+                <div class="content-55">
+
+                    <div class="content-55 one">
+
+                        <img src="./img/reviews.png" alt="reviews">
+
+                    </div>
+
+                </div>
+
+                <div class="content-5-btn">
+                    <!-- <button class="content-5-endbtn" sr>SHOW MORE</button> -->
+                </div>
+
+                <div class="content-5-link">
+                    <a href="https://pioneertelemedicine.netlify.app/">https://pioneertelemedicine.netlify.app/</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer>
+
+            <div class="container">
+
+                <div class="footerlinks">
+                    <ul class="footerul">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="trm&cndts.html">Terms & Conditions</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="index.html">Conditions</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="convenient_content">
-                    <h1 class="convenient_content_title h_title">
-                        convenient
-                    </h1>
-                    <ul>
-                        <li>
-                            Consult with a doctor anywhere via email, phone, video, or app
-                        </li>
-                        <li>
-                            Cheaper than most co-pays
-                        </li>
-                        <li>
-                            No more long waits at a germ filled DR's office
-                        </li>
-                        <li>
-                            Free next day delivery with preferred pharmacy or local pharmacy pick up
-                        </li>
-                        <li>
-                            Over 900+ certified US based licensed DR's
-                        </li>
-                    </ul>
+                <div class="footerline">
+                    <hr>
                 </div>
-            </div>
-        </div>
 
-    </section>
-    <!-- convenient end -->
-    <!-- treatment offers -->
-    <section id="treatment_offers" class="treatment_offers containers-lg">
-        <div class="containers">
-            <h1 class="h_title h_title_bold">Prescription treatment <span>offered</span></h1>
+                <div class="footercontent">
+                    <p>Pioneer Telemedicine is powered by Pioneer Technology Solutions, a Cloud based HIPAA compliant
+                        platform and electronic records system with 128-bit encryption.
 
-            <div class="most_cmn_show_all_btns">
-                <button class="treatment_offers_btns show_all_btn active">All</button>
-                <button class="treatment_offers_btns most_common_btn">Most Common</button>
-            </div>
-            <h3 class="treamentTitle"><span class="trmentsTilesShowing">All</span> Treatments</h3>
-
-            <div class="treatment_offers_main">
-                <div class="treatment_offers_cards">
-                    <a href="#">Erectile Dysfunction</a>
-                    <p>01</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Birth Control</a>
-                    <p>02</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Cold Sore</a>
-                    <p>03</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Muscle Pain Relief</a>
-                    <p>04</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Flu</a>
-                    <p>05</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Acne</a>
-                    <p>06</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Testosterone Therapy</a>
-                    <p>07</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Hair Loss</a>
-                    <p>08</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Stop Smoking</a>
-                    <p>09</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Primary Care Video Visit</a>
-                    <p>10</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Irritable Bowel Syndrome</a>
-                    <p>11</p>
-                </div>
-                <div class="treatment_offers_cards">
-                    <a href="#">Hyperhidrosis</a>
-                    <p>12</p>
-                </div>
-            </div>
-
-            <button class="treatment_offers_btns show_tiles_btn">show More</button>
-
-        </div>
-
-    </section>
-    <!-- treatment offers end -->
-
-    <!-- calculation table start  -->
-    <section id="calculation" class="calculation-table  containers-lg">
-        <div class="containers">
-            <div class="calculation-main">
-                <div class="primary_care pas-same">
-                    <h2 id="one"><span class="count" data-target="28">0</span>%</h2>
-                    <p>Of young people in the United States do not have a Primary Care Provider.</p>
-
-                </div>
-                <div class="appointment pas-same">
-                    <h2 id="two" ><span class="count" data-target="29">0</span></h2>
-                    <p>Is the average number of days patients wait for an appointment in the US.</p>
-
-                </div>
-                <div class="researcher_call pas-same">
-                    <h2 id="three"><span>100,000 +</span></h2>
-                    <p>Patients treated by our Medical Doctors. </p>
-
+                        Server based anti-virus software for imported files to be scanned prior to upload into Software.
+                        21 CFR Part 11 compliance.
+                    </p>
                 </div>
 
             </div>
-        </div>
-    </section>
 
+        </footer>
 
+    </main>
 
-    <!-- calculation table ends  -->
+    <script src="./js/main.js"> </script>
 
-
-
-
-    <!-- how it works -->
-    <section id="h_how_it_works" class="h_how_it_works containers-lg">
-        <div class="containers">
-            <h1 class="h_title">how it works</h1>
-            <div class="h_how_it_works_main">
-                <div class="h_how_it_works_cards">
-                    <h3 class="h_how_it_works_cards_title">Online Health Assessment</h3>
-                    <div class="h_how_it_works_cards_body">
-                        <p class="h_how_it_works_cards_text">Tell us about your medical history.</p>
-                        <p class="h_how_it_works_cards_step">step 1</p>
-                    </div>
-                </div>
-                <div class="h_how_it_works_cards">
-                    <h3 class="h_how_it_works_cards_title">Talk to a provider</h3>
-                    <div class="h_how_it_works_cards_body">
-                        <p class="h_how_it_works_cards_text">One of our U.S. licensed doctors are available via chat,
-                            phone, or video.</p>
-                        <p class="h_how_it_works_cards_step">step 2</p>
-                    </div>
-                </div>
-                <div class="h_how_it_works_cards">
-                    <h3 class="h_how_it_works_cards_title">FREE Medication Delivery or Pick up at Local Pharmacy</h3>
-                    <div class="h_how_it_works_cards_body">
-                        <p class="h_how_it_works_cards_text">Free delivery anywhere in the United States to your home or
-                            office. No need to sign. Or pick up at your local pharmacy. The choice is YOURS!
-                        </p>
-                        <p class="h_how_it_works_cards_step">step 3</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-    <!-- how it works end -->
-
-
-    <!-- footer -->
-    <footer>
-        <div class="containers h_footer_main">
-            <a href="faq.html" class="h_footer_link">FAQ</a>
-            <a href="trm&cndts.html" class="h_footer_link">Terms & Conditions</a>
-            <a href="privacypolicy.html" class="h_footer_link">Privacy Policy</a>
-            <a href="aboutus.html" class="h_footer_link">About</a>
-            <a href="index.html" class="h_footer_link">Treatments</a>
-            <a href="contactus.html" class="h_footer_link">Contact Us</a>
-        </div>
-        <div class="footer_bottom containers">
-            <p>Pioneer Telemedicine is powered by Pioneer Technology Solutions, a Cloud based HIPAA compliant platform
-                and electronic records system with 128-bit encryption.
-            </p>
-            <p>Server based anti-virus software for imported files to be scanned prior to upload into Software. 21 CFR
-                Part 11 compliance.</p>
-        </div>
-    </footer>
-    <!-- footer end -->
-
-    <!-- javascript -->
-    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>

@@ -164,6 +164,12 @@ i#bars {
   font-size: 25px;
 }
 
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
 .hero {
   background-image: url(../img/Hero2.jpg);
   background-size: cover;
@@ -173,8 +179,11 @@ i#bars {
 }
 
 .container-hero {
-  padding: 0;
-  margin: 0;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1px;
+  /* padding: 0;
+  margin: 0; */
 }
 
 .row-1 {
@@ -185,13 +194,14 @@ i#bars {
     rgba(255, 255, 255, 1) 16%,
     rgba(255, 255, 255, 0) 91%
   );
+  margin-left: -23px; /* hero */
 }
 
 .accordion-section {
   max-width: 500px;
   padding-top: 105px;
   padding-bottom: 50px;
-  padding-left: 90px;
+  padding-left: 113px;
   height: 230px;
 }
 
@@ -240,7 +250,7 @@ ul {
     rgba(254, 254, 254, 0) 100%
   );
   padding-top: 20px;
-  padding-left: 90px;
+  padding-left: 113px; /* Hero */
   padding-bottom: 20px;
 }
 
@@ -267,6 +277,10 @@ li:nth-child(1) {
   );
 }
 
+.row-2 {
+  margin-left: -23px; /* Hero */
+}
+
 .content-heading {
   background: rgb(1, 45, 77);
   background: linear-gradient(
@@ -280,7 +294,7 @@ li:nth-child(1) {
   font-weight: 600;
   font-size: 20px;
   padding: 05px 0;
-  padding-left: 90px;
+  padding-left: 113px; /* Hero */
 }
 
 section.content-1 {
@@ -923,7 +937,7 @@ ul.footerul {
   }
 
   .accordion-section {
-    padding-left: 50px;
+    padding-left: 73px; /* Hero */
   }
 
   .accordion::after {
@@ -931,7 +945,7 @@ ul.footerul {
   }
 
   .content-heading {
-    padding-left: 50px;
+    padding-left: 73px; /* Hero */
   }
 
   .content-11 h1 {
@@ -939,7 +953,7 @@ ul.footerul {
   }
 
   ul {
-    padding-left: 70px;
+    padding-left: 93px;
   }
 
   .content-3-heading {
@@ -999,7 +1013,7 @@ ul.footerul {
   }
 
   .row-1 {
-    padding-bottom: 20px;
+    padding-bottom: 35px;
   }
 
   .accordion::after {

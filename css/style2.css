@@ -268,13 +268,13 @@ li:nth-child(1) {
 }
 
 .contentextralines {
-  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 1) 16%,
     rgba(255, 255, 255, 0) 91%
-  );
+  ); */
 }
 
 .row-2 {

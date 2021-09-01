@@ -548,15 +548,46 @@ showbutton.addEventListener("click", function () {
 
 // Show More Show less for " MOST COMMON " BUTTON
 
-let showbtn = document.querySelector(".mcbtn");
 let showdata = document.querySelector(".moremc");
 
-showbtn.addEventListener("click", function () {
-  if (showdata.style.display == "flex") {
-    showdata.style.display = "none";
-    showbtn.textContent = "SHOW MORE";
-  } else {
-    showdata.style.display = "flex";
-    showbtn.textContent = "SHOW LESS";
-  }
+// let showbtn = document.querySelector(".mcbtn");
+// showbtn.addEventListener("click", function () {
+//   if (showdata.style.display == "flex") {
+//     showdata.style.display = "none";
+//     showbtn.textContent = "SHOW MORE";
+//   } else {
+//     showdata.style.display = "flex";
+//     showbtn.textContent = "SHOW LESS";
+//   }
+// });
+
+// JQUERY SLIDER
+
+$(".carousel").owlCarousel({
+  margin: 100,
+  loop: true,
+  // autoplay: true,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+    },
+
+    600: {
+      items: 1,
+      nav: false,
+    },
+
+    1000: {
+      items: 2,
+      nav: false,
+    },
+
+    1200: {
+      item: 3,
+      nav: false,
+    },
+  },
 });
